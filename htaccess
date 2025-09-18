@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteBase /bloomedcakes/
+
+# Redireciona qualquer URL para rotas.php, independentemente de ter ou não .php no final
+RewriteRule ^([a-zA-Z0-9_-]+)(\.php)?$ rotas.php?url=$1 [QSA,L]
+
